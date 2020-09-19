@@ -52,11 +52,13 @@ def all_supplies_in_holidays(holiday_hash)
 end
 
 def all_holidays_with_bbq(holiday_hash)
+  holidays = []
   holiday_hash.each do |season, holiday|
     holiday.each do |day, list|
       if list.include?("BBQ")
-        puts holiday.keys
+        day << holidays
       end
     end
   end
+  holidays
 end
