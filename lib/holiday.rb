@@ -56,4 +56,5 @@ def all_holidays_with_bbq(holiday_hash)
     if list.include?("BBQ")
       puts list
     end
+  end
 end
