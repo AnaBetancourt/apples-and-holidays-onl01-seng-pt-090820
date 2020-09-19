@@ -53,5 +53,6 @@ end
 
 def all_holidays_with_bbq(holiday_hash)
   holiday_hash.select do |holiday, list|
-    
+    if list.include?("BBQ")
+      puts list
 end
